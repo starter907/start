@@ -1,0 +1,45 @@
+.cloud-container {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.cloud-container.visible {
+  opacity: 1;
+}
+
+.cloud-image {
+  width: 80vw;
+  height: auto;
+}
+
+.text-on-cloud {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.text-on-cloud.visible {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .cloud-image {
+    width: 180vw;
+  }
+  .text-on-cloud {
+    width: 70vw;
+  }
+
+  .cloud-container {
+    top: 19%;
+  }
+}
